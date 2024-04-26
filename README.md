@@ -2,6 +2,8 @@
 
 This guide provides detailed instructions on how to set up the Link Layer Discovery Protocol (LLDP) on a Proxmox server, enable additional protocols such as Cisco Discovery Protocol (CDP), and configure automated updates for network interface descriptions based on LLDP data.
 
+![screenshot](img1.png)
+
 ## Prerequisites
 
 Before starting, ensure that you have administrative access to your Proxmox server and are familiar with basic Linux command line operations.
