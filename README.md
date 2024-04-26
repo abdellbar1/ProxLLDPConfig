@@ -53,7 +53,7 @@ Restart the `lldpd` service to apply the changes:
 
 ```bash
 sudo systemctl restart lldpd
-
+```
 ## Configuring Interface Pattern
 
 Configure `lldpd` to monitor only interfaces that match a specific pattern, such as `en*` for Ethernet interfaces. This is especially useful in environments with multiple interface types where you want to target a specific subset.
