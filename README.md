@@ -6,6 +6,33 @@ This guide provides detailed instructions on how to set up the Link Layer Discov
 
 Before starting, ensure that you have administrative access to your Proxmox server and are familiar with basic Linux command line operations.
 
+## Automated Installation
+
+For convenience, an automated installation script is available to set up everything described in this guide. This script installs `lldpd`, configures it, and sets up a cron job to update network interface descriptions automatically.
+
+### Using the Install Script
+
+To use the automated install script, follow these steps:
+
+1. **Clone the repository to your Proxmox server**:
+   To get started, clone the repository from GitHub by running the following command:
+
+   ```bash
+   git clone https://github.com/abdellbar1/ProxLLDPConfig.git
+   cd ProxLLDPConfig
+   ```
+2. **Make the script executable**:
+   
+   ```bash
+   chmod +x install.sh
+   ```
+3. **Run the script as root**:
+
+    ```bash
+    sudo ./install.sh
+    ```
+This script handles all the configurations and setups automatically, enhancing your Proxmox server's network management capabilities with minimal manual intervention.
+
 ## Installation of LLDP
 
 LLDP is not installed by default on Proxmox. You will need to install the `lldpd` package, which supports LLDP and other discovery protocols.
